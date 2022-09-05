@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SPA HTML-CSS-JS</title>
+
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+
+  <body>
+    <main id="app">
+      <!-- HOME PAGE -->
+
+      <div id="home_page">
+        <header>
+          <nav>
+            <div class="logo">Logo</div>
+            <div class="nav_buttons_container">
+              <button class="nav_button active" data-button="home">Home</button>
+              <button class="nav_button" data-button="about">About</button>
+              <button class="nav_button" data-button="blog">Blog</button>
+            </div>
+          </nav>
+          <h1>Home</h1>
+        </header>
+      </div>
+
+      <!-- ABOUT PAGE -->
+
+      <div id="about_page" class="hidden">
+        <nav>
+          <div class="logo">Logo</div>
+          <div class="nav_buttons_container">
+            <button class="nav_button" data-button="home">Home</button>
+            <button class="nav_button active" data-button="about">About</button>
+            <button class="nav_button" data-button="blog">Blog</button>
+          </div>
+        </nav>
+        <h1>About</h1>
+      </div>
+
+      <!-- BLOG PAGE -->
+
+      <div id="blog_page" class="hidden">
+        <nav>
+          <div class="logo">Logo</div>
+          <div class="nav_buttons_container">
+            <button class="nav_button" data-button="home">Home</button>
+            <button class="nav_button" data-button="about">About</button>
+            <button class="nav_button active" data-button="blog">Blog</button>
+          </div>
+        </nav>
+        <h1>Blog</h1>
+      </div>
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
