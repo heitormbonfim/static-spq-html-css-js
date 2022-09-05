@@ -1,4 +1,4 @@
-// default variables
+// global variables
 const doc = document;
 
 // async is set by default in case you want to fetch data from APIs
@@ -11,19 +11,19 @@ async function handlePageSwitch() {
   // events to switch pages
   doc.querySelectorAll(".nav_button").forEach((button) => {
     // check the data attribute of each button
-    const content = button.dataset.button;
+    const dataButton = button.dataset.button;
 
-    // if the content matches call the switch pages
+    // if the dataButton matches call the switch pages
     button.addEventListener("click", () => {
-      if (content == "about") {
+      if (dataButton == "about") {
         switchPages(aboutPage, [homePage, blogPage]);
       }
 
-      if (content == "blog") {
+      if (dataButton == "blog") {
         switchPages(blogPage, [homePage, aboutPage]);
       }
 
-      if (content == "home") {
+      if (dataButton == "home") {
         switchPages(homePage, [aboutPage, blogPage]);
       }
     });
